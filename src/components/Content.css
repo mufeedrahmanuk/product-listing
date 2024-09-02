@@ -1,0 +1,87 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: rgba(255, 255, 255, 1);
+  overflow: hidden; /* Ensure no overflow on the right */
+  position: relative;
+}
+
+.text {
+  max-width: 50%;
+  z-index: 2;
+  margin-bottom: 150px;
+}
+
+.text h2 {
+  width: 523px; /* Set the width */
+  height: 108px; /* Set the height */
+  gap: 0px; /* No gap */
+  opacity: 0px; /* Full transparency */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 36px; /* Set the font size */
+  font-weight: 700; /* Set the font weight to bold */
+  line-height: 54px; /* Set the line height */
+  text-align: left; /* Align text to the left */
+  color: rgba(33, 33, 33, 1); /* Set the background color */
+  margin-bottom: 20px; /* Keep the margin-bottom */
+}
+
+
+.text p {
+  top: 146px; /* Position from the top */
+  left: 2px; /* Position from the left */
+  gap: 0px; /* No gap */
+  opacity: 0px; /* Full transparency */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 24px; /* Set the font size */
+  font-weight: 400; /* Set the font weight */
+  line-height: 36px; /* Set the line height */
+  text-align: left; /* Align text to the left */
+  color: rgba(0, 0, 0, 1); /* Set the background color to black */
+  margin-bottom: 20px; /* Keep the margin-bottom */
+}
+
+
+.read-more1 {
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 175px;
+  height: 40px;
+  gap: 0px;
+  opacity: 1; /* Ensure opacity is set to 1 */
+  transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+.read-more1:hover {
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%); /* Change the background gradient on hover */
+  transform: scale(1.05); /* Slightly scale the button */
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  width: 564.92px; /* Use the plant image's width */
+  height: 891.9px; /* Use the plant image's height */
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  top: 185px;
+}
+
+.image {
+  position: relative;
+  bottom: 100px;
+}

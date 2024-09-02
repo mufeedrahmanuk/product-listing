@@ -1,0 +1,155 @@
+.footer {
+  position: relative;
+  padding: 50px 80px;
+  background-color: white;
+}
+
+.footer-bg {
+  position: absolute;
+  left: 0;
+  top: 108px;
+}
+
+.footer-section {
+  display: flex;
+  flex: 1;
+  margin-right: -80px;
+  color: #666;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  margin-top: 250px;
+}
+
+.footer-left {
+  position: relative;
+  z-index: 3;
+}
+
+.footer-icon {
+  width: 272px;
+  height: 54px;
+  position: absolute;
+  top: 0px;
+  left: -23px;
+  z-index: 4;
+}
+
+.footer-description {
+  position: absolute;
+  top: 40px;
+  left: -32px;
+  width: 459px;
+  height: 132px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 5;
+  padding: 10px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  width: 211px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  color: transparent;
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text; /* Standard property */
+}
+
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: justify;
+  color: rgba(33, 33, 33, 1); /* Text color */
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  transition: color 0.3s ease, font-weight 0.3s ease, text-decoration 0.3s ease; /* Add transition */
+}
+
+.footer-middle ul li:hover,
+.footer-right ul li:hover {
+  color: rgba(92, 109, 222, 1); /* Change text color on hover */
+  font-weight: 500; /* Slightly increase font weight on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+.footer-middle ul li,
+.footer-right ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+  gap: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.social-icon {
+  width: 24px;  /* Icon width */
+  height: 24px; /* Icon height */
+  background: linear-gradient(90deg, #73E0A9 0%, #5B68DF 100%);
+  padding: 10.5px; /* Centering the icon within the 45px background */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s, background-color 0.3s;
+  box-sizing: content-box; /* Ensures padding is added outside the 24x24 icon */
+}
+
+.social-icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 45px; /* Background width */
+  height: 45px; /* Background height */
+  border-radius: 8px; /* Rounded corners */
+  background: inherit; /* Inherit the background gradient */
+  z-index: -1; /* Position the background behind the icon */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  background-color: #3a7bd5; /* Change background color on hover */
+}
+
+
+

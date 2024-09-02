@@ -1,0 +1,102 @@
+.products {
+  padding: 50px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
+  gap: 70px;
+}
+
+.product-card {
+  width: 369px;
+  height: 440px;
+  background: rgba(255, 255, 255, 1);
+  padding: 0;
+  border-radius: 30px;
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.15); /* Updated box-shadow */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly */
+  box-shadow: 0px 8px 30px 10px rgba(0, 0, 0, 0.2); /* Deepens the shadow */
+}
+
+.product-card img {
+  width: 369px;
+  height: 303px;
+  border-radius: 30px;
+  object-fit: none; /* Ensures the image covers the entire area */
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease; /* Add transition to image */
+}
+
+.product-card img:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+/* The rest of your CSS remains the same */
+
+
+.product-card h3 {
+  color: rgba(33, 33, 33, 1); /* Updated text color */
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+  background: none; /* Ensure no background color is applied */
+}
+
+.product-card p {
+  width: 75px;
+  height: 36px;
+  color: rgba(116, 116, 116, 1); /* Updated text color */
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 20px; /* Retain padding if still needed */
+}
+
+
+
+/* Container for the text part at the bottom */
+.product-card-text {
+  padding: 10px 20px;
+}
+
+
+.load-more-container {
+  margin-top: 30px;
+}
+
+.load-more {
+  color: rgba(92, 109, 222, 1);
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+.load-more:hover {
+  color: rgba(255, 255, 255, 1); /* Change text color on hover */
+  background: rgba(92, 109, 222, 1); /* Change background color on hover */
+  transform: scale(1.05); /* Slightly scale the button */
+}
+

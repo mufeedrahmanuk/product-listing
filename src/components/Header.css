@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  background: transparent;
+  width: 1300px;
+  height: 54px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 306px;
+  height: 24px;
+  margin-left: 400px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(33, 33, 33, 1); /* Initial color */
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Add transition */
+}
+
+nav a:hover {
+  color: rgba(92, 109, 222, 1); /* Change color on hover */
+  border-bottom: 2px solid rgba(92, 109, 222, 1); /* Add underline on hover */
+}
+
+
+
+.login-btn {
+  width: 175px;
+  height: 40px;
+  background: var(--primary-gradient);
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%); /* Change the background gradient on hover */
+  transform: scale(1.05); /* Slightly scale the button */
+}
+
+
+
