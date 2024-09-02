@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css'; // Add styles
+import './Content.css';
 
 import Plant from '../assets/tree.png';
 import Background from '../assets/tree-background.png';

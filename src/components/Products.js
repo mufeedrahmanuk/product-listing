@@ -14,9 +14,9 @@ import image10 from '../assets/image10.jpg';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(6); // Initial visible count
-  const [showMore, setShowMore] = useState(false); // Track whether to show more or less
-  const [loading, setLoading] = useState(true); // Track loading state
+  const [visibleCount, setVisibleCount] = useState(6);
+  const [showMore, setShowMore] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const images = [
     image1,
@@ -41,27 +41,27 @@ const Products = () => {
           image: index < 10 ? images[index] : images[Math.floor(Math.random() * images.length)],
         }));
         setProducts(updatedProducts);
-        setLoading(false); // Set loading to false once data is fetched
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching products:', error);
-        setLoading(false); // Ensure loading state is updated even if there's an error
+        setLoading(false);
       });
   }, []);
 
   const handleToggleProducts = () => {
     if (showMore) {
-      setVisibleCount(6); // Reset to show only initial 6 products
+      setVisibleCount(6);
     } else {
-      setVisibleCount(products.length); // Show all products
+      setVisibleCount(products.length);
     }
-    setShowMore(!showMore); // Toggle the state
+    setShowMore(!showMore);
   };
 
   return (
     <section className="products">
       {loading ? (
-        <div className="loading">Loading...</div> // Placeholder content
+        <div className="loading">Loading...</div>
       ) : (
         <>
           <div className="product-grid">

@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-/* Vector Images Styling */
+
 .vector1,
 .vector2,
 .vector3,
@@ -45,7 +45,7 @@
     left: 0%;
 }
 
-/* H1 Styling */
+
 .hero h1 {
   font-family: 'Poppins';
   font-weight: 700;
@@ -58,7 +58,7 @@
   z-index: 3;
 }
 
-/* Read More Button Styling */
+
 .read-more {
   width: 249px;
   height: 60px;
@@ -76,11 +76,11 @@
   font-family: 'Poppins', sans-serif;
   position: relative;
   z-index: 3;
-  transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .read-more:hover {
-  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%); /* Change the background gradient on hover */
-  transform: scale(1.05); /* Slightly scale the button */
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  transform: scale(1.05);
 }
 

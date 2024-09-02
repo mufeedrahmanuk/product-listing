@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-// Import images
+
 import Vector1 from '../assets/Vector1.png';
 import Vector2 from '../assets/Vector2.png';
 import Vector3 from '../assets/Vector3.png';

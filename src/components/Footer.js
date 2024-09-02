@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file
+import './Footer.css';
 
 import FooterVector from '../assets/footer.png';
 import FooterIcon from '../assets/footericon.png';

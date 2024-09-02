@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Content from './components/Content';
 import Products from './components/Products';
 import Footer from './components/Footer';
-import './App.css'; // Main CSS file
+import './App.css';
 
 
 function App() {
