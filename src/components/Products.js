@@ -7,10 +7,10 @@ import image3 from '../assets/image3.png';
 import image4 from '../assets/image4.png';
 import image5 from '../assets/image5.png';
 import image6 from '../assets/image6.png';
-import image7 from '../assets/image7.png';
-import image8 from '../assets/image8.png';
-import image9 from '../assets/image9.png';
-import image10 from '../assets/image10.png';
+import image7 from '../assets/image7.jpg';
+import image8 from '../assets/image8.jpg';
+import image9 from '../assets/image9.jpg';
+import image10 from '../assets/image10.jpg';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -35,9 +35,10 @@ const Products = () => {
     fetch('https://my-json-server.typicode.com/TomSearle/cb-devtest-api/products')
       .then((response) => response.json())
       .then((data) => {
-        const updatedProducts = data[0].map((product) => ({
+        const initialProducts = data[0];
+        const updatedProducts = initialProducts.map((product, index) => ({
           ...product,
-          image: images[Math.floor(Math.random() * images.length)],
+          image: index < 10 ? images[index] : images[Math.floor(Math.random() * images.length)],
         }));
         setProducts(updatedProducts);
         setLoading(false); // Set loading to false once data is fetched
@@ -84,6 +85,5 @@ const Products = () => {
     </section>
   );
 };
-
 
 export default Products;
